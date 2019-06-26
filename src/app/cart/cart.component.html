@@ -1,0 +1,10 @@
+
+        <h2><span style="margin-left:12em">Cart</span></h2><br>
+      <p class="contents" *ngFor="let it of data let i = index" >
+        {{it.item}}
+        {{it.price}}
+        <button type="button" (click)="delByID(it,i)">Delete</button>
+        </p>
+        <br>
+        
+          

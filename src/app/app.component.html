@@ -1,0 +1,7 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-store></app-store>
+<router-outlet></router-outlet> -->
+
+<app-catalog (data)='orders=$event' (tot)='amount=$event'></app-catalog>
+<app-cart  [data]="orders" (pri)='amount=$event'></app-cart>
+<app-checkout [final]="amount"></app-checkout>

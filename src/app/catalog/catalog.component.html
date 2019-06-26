@@ -1,0 +1,10 @@
+<div class="split left">
+  <div class="boxstyle">
+    <p class="contents" *ngFor="let contents of catalog;let i = index" >
+      Item:<br><br>
+      <span style="margin-left:2.5em">{{contents.item}}</span><br><br>
+      <span style="margin-left:3em">{{contents.price}}</span><br>
+      <span style="margin-left:12em"><button class="button1"  (click)="addToCart(contents)">Add to Cart</button>
+      </span><br>
+      </p><br>
+    </div></div>
